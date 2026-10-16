@@ -8,12 +8,40 @@ contacts:
   - displayName: chacaragih12-cloud
     pictureUrl: https://avatars.githubusercontent.com/u/343152289?v=4
     homePageUrl: https://github.com/chacaragih12-cloud
+files:
+  - path: course1/unit1/lesson1/lessonpart1/linier.py
+    content: "def linear_search(names, target):\r
+
+      \    for i in range(len(names)):\r
+
+      \        if names[i] == target:\r
+
+      \            return i # Mengembalikan indeks tempat target ditemukan\r
+
+      \    return -1 # Jika tidak ditemukan\r
+
+      \r
+
+      # Daftar nama\r
+
+      names = ['Ali', 'Budi', 'Charlie', 'Dian', 'Eva']\r
+
+      target = 'Dian'\r
+
+      result = linear_search(names, target)\r
+
+      \r
+
+      if result!= -1:\r
+
+      \    print(f'{target} ditemukan pada indeks {result}')\r
+
+      else:\r
+
+      \    print(f'{target} tidak ditemukan dalam daftar.')\r
+
+      \r
+
+      \    "
 units:
-  - id: unit1
-    title: Unit 1
-    lessons:
-      - id: lesson1
-        title: Lesson 1
-        lessonParts:
-          - id: lessonpart1
-            title: Page 1
+  - unit1/index.yml
